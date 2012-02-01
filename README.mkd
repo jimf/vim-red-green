@@ -1,0 +1,39 @@
+vim-RedGreen
+===============
+
+red-green.vim is a simple plugin for displaying a red or green bar with a message. It's intended to be used by other plugins/functions/mappings rather than provide extended functionality on its own.
+
+Inspiration for this plugin from [makegreen.vim](https://github.com/reinh/vim-makegreen) and [Gary Bernhardt](http://bitbucket.org/garybernhardt/dotfiles/src/tip/.vimrc).
+
+Installation
+------------
+
+Extract files to your ~/.vim directory or use Time Pope's [pathogen.vim](https://github.com/tpope/vim-pathogen).
+
+Requirements
+------------
+
+Vim 7.0+
+
+Usage
+-----
+
+Call GreenBar() and RedBar() with your desired text:
+
+    :call GreenBar('All tests passed')
+    :call RedBar('Assertion Error')
+
+Configuration
+-------------
+
+The colors used by this plugin can be tweaked by modifying the following highlight groups:
+
+    hi GreenBar term=reverse ctermfg=black ctermbg=green guifg=black guibg=green
+    hi RedBar   term=reverse ctermfg=black ctermbg=red   guifg=black guibg=red3
+
+Related: [View all colors available to gvim](http://vim.wikia.com/wiki/View_all_colors_available_to_gvim)
+
+License
+-------
+
+MIT License
