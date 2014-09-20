@@ -17,12 +17,12 @@ endif
 
 function GreenBar(msg)
     echohl GreenBar
-    echon a:msg repeat(" ", &columns - strwidth(a:msg) - 1)
+    echon a:msg repeat(" ", &columns - strwidth(a:msg))
     echohl None
 endfunction
 
 function RedBar(msg)
     echohl RedBar
-    echon a:msg repeat(" ", &columns - strwidth(a:msg) - 1)
+    echon a:msg repeat(" ", &columns - strwidth(a:msg))
     echohl None
 endfunction
